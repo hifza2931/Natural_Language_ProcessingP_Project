@@ -56,8 +56,7 @@ Math Problem (GSM-8k)
 
 > 📷 **Methodology Diagram** 
 
-![Pipeline](assets/pipeline.jpeg)
-
+![Pipeline](pipeline.jpeg)
 ---
 
 ## How It Differs from Original SELF-REFINE
