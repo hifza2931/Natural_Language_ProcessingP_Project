@@ -1,4 +1,4 @@
-# 🧠 Specialist Self-Refine: A Three-Model Pipeline with Dual-Feedback Ranking for Improved Mathematical Reasoning in LLMs
+# Specialist Self-Refine: A Three-Model Pipeline with Dual-Feedback Ranking for Improved Mathematical Reasoning in LLMs
 
 > **Samar Iqbal · Hifza Umer · Shirin Sasna**
 > Department of Artificial Intelligence & Data Science
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Large Language Models often produce sub-optimal first-attempt outputs — especially on multi-step mathematical reasoning tasks. The original **SELF-REFINE** framework (Madaan et al., NeurIPS 2023) mitigates this by looping a single model through generate → feedback → refine. However, when smaller open-source models are used, this single-model loop stalls: the same model that makes an arithmetic error is rarely capable of identifying its own mistake.
 
@@ -18,7 +18,7 @@ On a controlled 10-problem GSM-8k evaluation, our pipeline improves solve rate f
 
 ---
 
-## 🏗️ Pipeline Architecture
+##  Pipeline Architecture
 
 ```
 Math Problem (GSM-8k)
@@ -54,12 +54,8 @@ Math Problem (GSM-8k)
          Loop until correct or T=4
 ```
 
-> 📷 **Methodology Diagram** — Place your pipeline figure here:
-> `![Specialist Self-Refine Pipeline](assets/pipeline_diagram.png)`
 
----
-
-## 🆚 How It Differs from Original SELF-REFINE
+##  How It Differs from Original SELF-REFINE
 
 | Feature | Original SELF-REFINE | **Specialist Self-Refine (Ours)** |
 |---|---|---|
@@ -72,7 +68,7 @@ Math Problem (GSM-8k)
 
 ---
 
-## 🎯 Key Contributions
+##  Key Contributions
 
 1. **Faithful reproduction** of SELF-REFINE on 6 of 7 original tasks using `llama-3.1-8b-instant` via the Groq API — confirming qualitative claims hold under reduced model capability.
 
@@ -86,7 +82,7 @@ Math Problem (GSM-8k)
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Per-Iteration Solve Rate on GSM-8k
 
@@ -123,7 +119,7 @@ Math Problem (GSM-8k)
 
 ---
 
-## 🔬 Method Details
+##  Method Details
 
 ### Role-Specialised Model Assignment
 
@@ -186,7 +182,7 @@ The loop terminates when:
 
 ---
 
-## 📚 Dataset
+##  Dataset
 
 **GSM-8k** (Grade School Math 8K) — Cobbe et al., 2021
 - Linguistically diverse grade-school math word problems
@@ -196,7 +192,7 @@ The loop terminates when:
 
 ---
 
-## 🚀 Reproducing This Work
+## Reproducing This Work
 
 All experiments are fully reproducible on the **Groq free tier**.
 
@@ -236,7 +232,7 @@ for t in range(MAX_ITER):
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - **Sample size**: Evaluation on 10 problems only (free-tier rate limits). Results are sensitive to single-problem outcomes.
 - **Ceiling effect**: 100% solve rate likely partially explained by subset difficulty — not guaranteed to generalise at scale.
@@ -258,7 +254,7 @@ for t in range(MAX_ITER):
 
 ---
 
-## 📖 Citation
+##  Citation
 
 If you find this work useful, please cite:
 
@@ -274,7 +270,7 @@ If you find this work useful, please cite:
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 This work builds upon and extends:
 - **SELF-REFINE** — Madaan et al., NeurIPS 2023 ([arXiv:2303.17651](https://arxiv.org/abs/2303.17651))
