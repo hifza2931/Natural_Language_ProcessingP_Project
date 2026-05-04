@@ -285,5 +285,5 @@ This work builds upon and extends:
 ---
 
 <p align="center">
-  <i>Department of AI & Data Science · FAST-NUCES Islamabad · 2024</i>
+  <i>Department of AI & Data Science · FAST-NUCES Islamabad · 2026</i>
 </p>
