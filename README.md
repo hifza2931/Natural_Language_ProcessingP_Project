@@ -31,7 +31,7 @@ Math Problem (GSM-8k)
            │  initial Python solution y₀
            ▼
     ┌─────────────┐
-    │ Correct?    │──── Yes ──▶ Final Answer ✅
+    │ Correct?    │──── Yes ──▶ Final Answer 
     └──────┬──────┘
            │ No
            ▼
