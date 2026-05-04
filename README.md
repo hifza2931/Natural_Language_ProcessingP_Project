@@ -55,7 +55,7 @@ Math Problem (GSM-8k)
 ```
 
 > 📷 **Methodology Diagram** — Place your pipeline figure here:
-> `![Pipeline](pipeline.png.jpeg)`
+> `![Pipeline](assets/pipeline.jpeg)`
 
 ---
 
