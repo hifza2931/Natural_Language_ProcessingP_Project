@@ -1,0 +1,30 @@
+# ── Specialist Self-Refine — GSM-8k Math Reasoning ───────────────────────────
+# requirements.txt
+# Python >= 3.9 recommended
+# Install: pip install -r requirements.txt
+
+# ── Core API client ───────────────────────────────────────────────────────────
+groq>=0.9.0                  # Groq API client (MODEL_INIT, MODEL_FEEDBACK, MODEL_REFINE)
+
+# ── ML / NLP (required by self-refine repo internals) ────────────────────────
+transformers>=4.40.0         # HuggingFace Transformers (cloned self-refine repo dependency)
+
+# ── Plotting ──────────────────────────────────────────────────────────────────
+matplotlib>=3.7.0            # Accuracy curves (3-curve comparison plot)
+
+# ── Standard library (no install needed — listed for reference) ───────────────
+# sys, os, json, time, re, pickle, collections  →  stdlib, always available
+
+# ── Colab-only (not needed outside Google Colab) ─────────────────────────────
+# google-colab                # files.download() used for final .pkl export
+#                             # Skip if running locally or on Kaggle
+
+# ── External repo (clone separately, not pip-installable) ────────────────────
+# git clone https://github.com/madaan/self-refine
+# Required path: self-refine/data/tasks/gsm/gsm.jsonl  (GSM-8k dataset)
+
+# ── Groq models used (free-tier, no extra install) ───────────────────────────
+# MODEL_INIT     : llama-3.1-8b-instant
+# MODEL_FEEDBACK : llama-3.3-70b-versatile
+# MODEL_REFINE   : meta-llama/llama-4-scout-17b-16e-instruct
+# MODEL_BASELINE : llama-3.1-8b-instant
