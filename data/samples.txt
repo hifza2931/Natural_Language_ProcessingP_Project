@@ -1,0 +1,6 @@
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("johnsonhk88/gsm8k-grade-school-math-8k-dataset-for-llm")
+
+print("Path to dataset files:", path)
